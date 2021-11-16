@@ -1,0 +1,58 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.0/css/bootstrap.min.css" rel="stylesheet" />
+</head>
+<body>
+    <div class="col-md-4 div1 center">
+        <h2>Add/Edit Contact</h2>
+    </div>
+    <div class="col-md-6 div1 center">
+        <h2>List of Contacts</h2>
+    </div>
+    <div class="div1 col-md-4">
+        <form name="userForm">
+            <input type="hidden" name="id" value="0" />
+            <div class="form-group col-md-12">
+                <label for="firstName">First Name:</label>
+                <input class="form-control" name="firstName" />
+            </div>
+            <div class="form-group col-md-12">
+                <label for="lastName">Last Name:</label>
+                <input class="form-control" name="lastName" />
+            </div>
+            <div class="form-group col-md-12">
+                <label for="email">Email:</label>
+                <input class="form-control" name="email" />
+            </div>
+            <div class="col-md-12 center">
+                <button type="submit" id="submit" class="btnStyle">Save</button>
+                <button type="reset" id="reset" class="btnStyle">Cancel</button>
+            </div>
+
+        </form>
+    </div>
+    <div class="div1 col-md-6 pad">
+        <table class="table table-condensed  table-striped ts">
+            <thead>
+                <tr>
+                    <th>Id</th>
+                    <th>First Name</th>
+                    <th>Last Name</th>
+                    <th>Email</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+            </tbody>
+        </table>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
+
